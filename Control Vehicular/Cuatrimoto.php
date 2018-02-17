@@ -10,6 +10,9 @@
  */
 class Cuatrimoto extends Vehiculo {
     
+    /**
+     * Método construtor de Cuatrimoto que extiende de Vehiculo.
+     */
     public function __construct() {
         parent::__construct();
     }

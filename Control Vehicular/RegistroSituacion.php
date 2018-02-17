@@ -14,10 +14,16 @@ class RegistroSituacion {
     private $descripcion;
     private $codigoTarjeta;
     
+    /*
+     * Método constructor de la clase RegistroSituación
+     */
     function __construct() {
         
     }
-    
+        
+    /*
+     * Métodos getters
+     */
     function getNombre() {
         return $this->nombre;
     }
@@ -30,6 +36,9 @@ class RegistroSituacion {
         return $this->codigoTarjeta;
     }
 
+    /*
+     * Métodos setters
+     */
     function setNombre($nombre) {
         $this->nombre = $nombre;
     }
@@ -41,7 +50,5 @@ class RegistroSituacion {
     function setCodigoTarjeta($codigoTarjeta) {
         $this->codigoTarjeta = $codigoTarjeta;
     }
-
-
 
 }

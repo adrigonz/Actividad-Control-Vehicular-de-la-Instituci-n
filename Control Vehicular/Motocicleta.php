@@ -11,6 +11,9 @@
 
 class Motocicleta extends Vehiculo{
     
+    /*
+     * Método constructor de la clase Motocicleta que extiende de la clase vehículo
+     */
     public function __construct() {
         parent::__construct();
     }

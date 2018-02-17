@@ -10,18 +10,24 @@
  * @version 1.0
  */
 abstract class Vehiculo {
-    protected $noPlaca;
-    protected $marca;
-    protected $modelo;
-    protected $color;
-    protected $noTarjetacirculacion;
+    protected $noPlaca; //Número de placa
+    protected $marca; //Marca de vehículo
+    protected $modelo; //Modelo de vehículo
+    protected $color; //Color del vehículo
+    protected $noTarjetacirculacion; //Targeta de circulación del vehículo
     
-    protected $usuario;
+    protected $usuario; //Relación con ususario 
             
+    /*
+     * Método constructor de la clase Vehículo 
+     */
     function __construct() {
         
     }
     
+    /*
+     * Métodos getters
+     */
     function getNoPlaca() {
         return $this->noPlaca;
     }
@@ -41,7 +47,14 @@ abstract class Vehiculo {
     function getNoTarjetacirculacion() {
         return $this->noTarjetacirculacion;
     }
+    
+      function getUsuario() {
+        return $this->usuario;
+    }
 
+    /*
+     * Métodos setters
+     */
     function setNoPlaca($noPlaca) {
         $this->noPlaca = $noPlaca;
     }
@@ -62,10 +75,6 @@ abstract class Vehiculo {
         $this->noTarjetacirculacion = $noTarjetacirculacion;
     }
     
-    function getUsuario() {
-        return $this->usuario;
-    }
-
     function setUsuario(Usuario $usuario) {
         $this->usuario = $usuario;
     }

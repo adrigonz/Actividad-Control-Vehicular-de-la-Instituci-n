@@ -11,6 +11,9 @@
 
 class Automovil extends Vehiculo {
     
+    /**
+     * Método que extiende de la clase Vehiculo.
+     */
     public function __construct() {
         parent::__construct();
     }

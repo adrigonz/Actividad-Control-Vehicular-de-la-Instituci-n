@@ -10,16 +10,25 @@
  */
 
 class Bicicleta extends Vehiculo{
-    private $caracteristicas;
+    private $caracteristicas; // Caracteristicas de la bicicleta
     
+    /**
+     * Método constructor de la clase Bicileta que extiende de la clase Vehiculo.
+     */
     public function __construct() {
         parent::__construct();
     }
 
+    /**
+     * Métodos getters.
+     */
     function getCaracteristicas() {
         return $this->caracteristicas;
     }
 
+    /**
+     * Métodos setters.
+     */
     function setCaracteristicas($caracteristicas) {
         $this->caracteristicas = $caracteristicas;
     }

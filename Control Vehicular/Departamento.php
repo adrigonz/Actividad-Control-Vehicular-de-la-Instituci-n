@@ -9,13 +9,19 @@
  * @version 1.0
  */
 class Departamento {
-    private $departamento;
-    private $telefono;
+    private $departamento; // Nombre del departamento.
+    private $telefono; // Telefono del departamento.
             
+    /**
+     * Método constructor de la clase Departamento.
+     */
     function __construct() {
      
     }
     
+    /**
+     * Métodos getters.
+     */
     function getDepartamento() {
         return $this->departamento;
     }
@@ -23,7 +29,10 @@ class Departamento {
     function getTelefono() {
         return $this->telefono;
     }
-
+    
+    /**
+     * Métodos setters.
+     */
     function setDepartamento($departamento) {
         $this->departamento = $departamento;
     }

@@ -9,16 +9,22 @@
  * @version 1.0
  */
 class Cajon {
-    private $area;
-    private $estatus;
-    private $tipoCajon;
+    private $area; // Area a la que pertenece el cajon.
+    private $estatus; // Identificar si el cajon se encuentra disponible.
+    private $tipoCajon; // Identificar si el cajon es publico o privado.
     
-    private $accesoCajon;
+    private $accesoCajon; // Relación con accesoCajon.
             
+    /**
+     * Método constructor de la clase.
+     */
     function __construct() {
         
     }
     
+    /**
+     * Métodos getters.
+     */
     function getArea() {
         return $this->area;
     }
@@ -30,7 +36,14 @@ class Cajon {
     function getTipoCajon() {
         return $this->tipoCajon;
     }
-
+    
+    function getAccesoCajon() {
+        return $this->accesoCajon;
+    }
+    
+    /**
+     * Métodos setters.
+     */
     function setArea($area) {
         $this->area = $area;
     }
@@ -43,12 +56,7 @@ class Cajon {
         $this->tipoCajon = $tipoCajon;
     }
 
-    function getAccesoCajon() {
-        return $this->accesoCajon;
-    }
-
     function setAccesoCajon(AccesoCajon $accesoCajon) {
         $this->accesoCajon = $accesoCajon;
     }
-
 }

@@ -10,17 +10,24 @@
  * @version 1.0
  */
 class Aclaracion {
-    private $automovilista;
-    private $fechaIncidencia;
-    private $tipoIncidencia;
-    private $descripcionIncidencia;
-    private $noInicdencia;
-    private $fechaVencimiento;
+    private $automovilista; // Automovilista.
+    private $fechaIncidencia; // Fecha en que ocurrió la incidencia.
+    private $tipoIncidencia; // Tipo de incidencia.
+    private $descripcionIncidencia; // Descripción de la incidencia.
+    private $noInicdencia; // Identificador de la incidencia.
+    private $fechaVencimiento; // Fehca de vencimiento de la incidencia.
     
+    /**
+     * Método constructor de la clase.
+     */
     function __construct() {
         
     }
 
+    /**
+     * Métodos getters.
+     */
+    
     function getAutomovilista() {
         return $this->automovilista;
     }
@@ -45,6 +52,10 @@ class Aclaracion {
         return $this->fechaVencimiento;
     }
 
+    /**
+     * Métodos setters.
+     */
+    
     function setAutomovilista($automovilista) {
         $this->automovilista = $automovilista;
     }
@@ -68,6 +79,5 @@ class Aclaracion {
     function setFechaVencimiento($fechaVencimiento) {
         $this->fechaVencimiento = $fechaVencimiento;
     }
-
 
 }

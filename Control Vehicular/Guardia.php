@@ -10,17 +10,27 @@
  * Description of Guardia
  *
  * @author Adriana Gonzalez
+ * @author Carlos Uriel Arriaga Corona
  */
 class Guardia extends Usuario {
     
+    /*
+     * Método constructor de la clase Guardia que extiende de Usuario
+     */
     public function __construct() {
         parent::__construct();
     }
     
+    /*
+     * Método para registrar el acceso del automivilista al estacionamiento 
+     */
     public function registarAcceso($automovilista, $codigoTarjeta, $hora, $fechaAcceso, $tipo){
         
     }
     
+    /*
+     * Métodos getters
+     */
     public function getApellidoM() {
         parent::getApellidoM();
     }
@@ -61,6 +71,9 @@ class Guardia extends Usuario {
         parent::getTelefono();
     }
     
+    /*
+     * Métodos setters
+     */
     public function setApellidoM($apellidoM) {
         parent::setApellidoM($apellidoM);
     }

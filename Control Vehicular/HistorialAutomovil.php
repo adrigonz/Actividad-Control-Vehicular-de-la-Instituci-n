@@ -9,108 +9,172 @@
  * @version 1.0
  */
 class HistorialAutomovil {
-    private $cantidadAccesoCajonDia;
-    private $cantidadAccesoCajonSemana;
-    private $cantidadAccesoCajonMes;
-    private $cantidadIncidenciasDia;
-    private $cantidadIncidenciasSemana;
-    private $cantidadIncidenciasMes;
-    private $hotarioMayorInfluenciaVehicular;
-    private $descripcionVehiculo;
-    private $cantidadMotosDia;
-    private $cantidadMotosSemana;
-    private $cantidadMotosMes;
-    private $cantidadAutosDia;
-    private $cantidadAutosSemana;
-    private $cantidadAutosMes;
-    private $cantidadBicicletaDia;
-    private $cantidadBicicletaSemana;
-    private $cantidadBicicletaMes;
-    private $cantidadTotalVehiculosDia;
-    private $cantidadTotalVehiculosSemana;
-    private $cantidadTotalVehiculosMes;
-    private $noClaveUsuario;
+    private $cantidadAccesoCajonDia; //Catidad de acceso cajon día
+    private $cantidadAccesoCajonSemana; //Catidad de acceso cajon semana
+    private $cantidadAccesoCajonMes; //Catidad de acceso cajon mes
+    private $cantidadIncidenciasDia; //Catidad incidencias día
+    private $cantidadIncidenciasSemana; //Catidad incidencias semana
+    private $cantidadIncidenciasMes; //Catidad incidencias mes
+    private $hotarioMayorInfluenciaVehicular; //Horario Mayor influencia vehicular
+    private $descripcionVehiculo; //Descripción de vehículo
+    private $cantidadMotosDia; //Cantidad motos al día
+    private $cantidadMotosSemana; //Cantidad motos al semana
+    private $cantidadMotosMes; //Cantidad motos al mes
+    private $cantidadAutosDia; //Cantidad autos día
+    private $cantidadAutosSemana; //Cantidad autos semana
+    private $cantidadAutosMes; //Cantidad autos mes
+    private $cantidadBicicletaDia; //Cantidad bicicletas día
+    private $cantidadBicicletaSemana; //Cantidad bicicletas semana
+    private $cantidadBicicletaMes;  //Cantidad bicicletas mes
+    private $cantidadTotalVehiculosDia; //Cantidad total vehículos día
+    private $cantidadTotalVehiculosSemana; //Cantidad total vehículos semana
+    private $cantidadTotalVehiculosMes; //Cantidad total vehículos mes 
+    private $noClaveUsuario; //Número de clave de usuario
     
-    public function calcularCantidadACDia() {
-        
-    }
     
-    public function calcularCantidadACSemana() {
-        
-    }
-    
-    public function calcularCantidadACMes() {
-        
-    }
-    
-    public function calcularCantidadIncidenciasDia() {
-        
-    }
-    
-    public function calcularCantidadIncidenciasSemana() {
-        
-    }
-    
-    public function calcularCantidadIncidenciasMes() {
-        
-    }
-    
-    public function calcularHorarioMayorInfluenciaVehicular() {
-        
-    }
-    
-    public function calcularCantidadMotosDia() {
-        
-    }
-    
-    public function calcularCantidadMotosSemana() {
-        
-    }
-    
-    public function calcularCantidadMotosMes() {
-        
-    }
-    
-    public function calcularCantidadAutosDia() {
-        
-    }
-    
-    public function calcularCantidadAutosSemana() {
-        
-    }
-    
-    public function calcularCantidadAutosMes() {
-        
-    }
-    
-    public function calcularCantidadBicisDia() {
-        
-    }
-    
-    public function calcularCantidadBicisSemana() {
-        
-    }
-    
-    public function calcularCantidadBicisMes() {
-        
-    }
-    
-    public function calcularCantidadVehiculosDia() {
-        
-    }
-    
-    public function calcularCantidadVehiculosSemana() {
-        
-    }
-    
-    public function calcularCantidadVehiculosMes() {
-        
-    }
-    
+    /*
+     * Método constructor de la clase HistorialAutomovil
+     */
     function __construct() {
         
     }
     
+    /*
+     * Método para calcular cantidad acceso día
+     */
+    public function calcularCantidadACDia() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad acceso semana
+     */
+    public function calcularCantidadACSemana() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad acceso mes
+     */
+    public function calcularCantidadACMes() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad incidencia al día
+     */
+    public function calcularCantidadIncidenciasDia() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad incidencia al semana
+     */
+    public function calcularCantidadIncidenciasSemana() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad incidencia al mes
+     */
+    public function calcularCantidadIncidenciasMes() {
+        
+    }
+    
+    /*
+     * Método para calcular horario mayor influencia vehícular
+     */
+    public function calcularHorarioMayorInfluenciaVehicular() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad motos día
+     */
+    public function calcularCantidadMotosDia() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad motos semana
+     */
+    public function calcularCantidadMotosSemana() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad motos mes
+     */
+    public function calcularCantidadMotosMes() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad autos día
+     */
+    public function calcularCantidadAutosDia() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad autos semana
+     */
+    public function calcularCantidadAutosSemana() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad autos mes
+     */
+    public function calcularCantidadAutosMes() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad bicicletas día
+     */
+    public function calcularCantidadBicisDia() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad bicicletas semana
+     */
+    public function calcularCantidadBicisSemana() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad bicicletas mes
+     */
+    public function calcularCantidadBicisMes() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad vehículos día
+     */
+    public function calcularCantidadVehiculosDia() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad vehículos semana
+     */
+    public function calcularCantidadVehiculosSemana() {
+        
+    }
+    
+    /*
+     * Método para calcular cantidad vehículos mes
+     */
+    public function calcularCantidadVehiculosMes() {
+        
+    }
+    
+    /*
+     * Métodos getters
+     */
     function getCantidadAccesoCajonDia() {
         return $this->cantidadAccesoCajonDia;
     }
@@ -195,6 +259,9 @@ class HistorialAutomovil {
         return $this->noClaveUsuario;
     }
 
+    /*
+     * Métodos setters
+     */
     function setCantidadAccesoCajonDia($cantidadAccesoCajonDia) {
         $this->cantidadAccesoCajonDia = $cantidadAccesoCajonDia;
     }
@@ -278,9 +345,5 @@ class HistorialAutomovil {
     function setNoClaveUsuario($noClaveUsuario) {
         $this->noClaveUsuario = $noClaveUsuario;
     }
-
-
-
-    
-    
+   
 }

@@ -10,16 +10,25 @@
  * @version 1.0
  */
 class Estudiante extends Automovilista{
-    private $noControl;
+    private $noControl; //Número de control para identificar al automovilista tipo estudiante.
     
+    /*
+     * Método contructor de la clase Estudiante que extiende de Automovilista.
+     */
     public function __construct() {
         parent::__construct();
     }
     
+    /*
+     * Métodos getters
+     */
     function getNoControl() {
         return $this->noControl;
     }
 
+    /*
+     * Métodos setters
+     */
     function setNoControl($noControl) {
         $this->noControl = $noControl;
     }

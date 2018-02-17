@@ -9,27 +9,39 @@
  * @version 1.0
  */
 class AccesoCajon {
-    private $codigoTarjeta;
-    private $hora;
-    private $fechaAcceso;
-    private $tipo;
+    private $codigoTarjeta; // Codigo de la tarjeta.
+    private $hora; // Hora de entrada o salida.
+    private $fechaAcceso; // Fecha de entrada o salida.
+    private $tipo; // Identifica si es Entrada o Salida.
     
-    private $guardias = array(Guardia);
-    private $usuario;
-    private $cajon;
+    private $guardias = array(Guardia); // Arreglo de relacion con los Guardias.
+    private $usuario; // Relacion con Usuario.
+    private $cajon; // Relacion con Cajon.
     
+    /**
+     * Método contructor de la clase.
+     */
     function __construct() {
         
     }
     
+    /**
+     * Método pata obtener los registros de la situación.
+     */
     public function obtenerRegistrosSituacion(){
         
     }
     
+    /**
+     * Método para obtener la aclaración.
+     */
     public function obtenerAclaracion(){
         
     }
     
+    /**
+     * Métodos getters.
+     */
     function getCodigoTarjeta() {
         return $this->codigoTarjeta;
     }
@@ -45,7 +57,23 @@ class AccesoCajon {
     function getTipo() {
         return $this->tipo;
     }
+    
+    function getGuardias() {
+        return $this->guardias;
+    }
 
+    function getUsuario() {
+        return $this->usuario;
+    }
+    
+    function getCajon() {
+        return $this->cajon;
+    }
+
+
+    /**
+     * Métodos setters.
+     */
     function setCodigoTarjeta($codigoTarjeta) {
         $this->codigoTarjeta = $codigoTarjeta;
     }
@@ -62,18 +90,6 @@ class AccesoCajon {
         $this->tipo = $tipo;
     }
     
-    function getGuardias() {
-        return $this->guardias;
-    }
-
-    function getUsuario() {
-        return $this->usuario;
-    }
-
-    function getCajon() {
-        return $this->cajon;
-    }
-
     function setGuardias(Guardia $guardias) {
         array_push($this->guardias = $guardias);
     }

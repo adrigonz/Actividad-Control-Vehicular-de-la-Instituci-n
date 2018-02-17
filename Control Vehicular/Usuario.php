@@ -10,24 +10,30 @@
  * @version 1.0
  */
 abstract class Usuario {
-    protected $nombre;
-    protected $apellidoP;
-    protected $apellidoM;
-    protected $email;
-    protected $telefono;
-    protected $estatus;
-    protected $area;
-    protected $cadena;
-    protected $noClave;
-    protected $codigoTarjeta;
-    
-    protected $accesoCajon = array(AccesoCajon);
-    protected $vehiculo;
+    protected $nombre; //nombre del usuario
+    protected $apellidoP; //apellidoP del usuario
+    protected $apellidoM; //apellidoM del usuario
+    protected $email; //email del usuario
+    protected $telefono; //teléfono del usuario
+    protected $estatus; //estatus del usuario
+    protected $area; //área del usuario
+    protected $cadena; //cadena del usuario
+    protected $noClave; //noClave del usuario
+    protected $codigoTarjeta; //código de tarjeta del usuario
+ 
+    protected $accesoCajon = array(AccesoCajon); //Relación de acceso cajón 
+    protected $vehiculo; //Relación de vehículo
             
+    /*
+     * Método constructor de la clase usuario
+     */
     function __construct() {
         
     }
 
+    /*
+     * Métodos getters
+     */
     function getNombre() {
         return $this->nombre;
     }
@@ -67,7 +73,16 @@ abstract class Usuario {
     function getCodigoTarjeta() {
         return $this->codigoTarjeta;
     }
+    
+     function getAccesoCajon() {
+        return $this->accesoCajon;
+    }
 
+    function getVehiculo() {
+        return $this->vehiculo;
+    }
+
+    //Métodos setters
     function setNombre($nombre) {
         $this->nombre = $nombre;
     }
@@ -108,14 +123,6 @@ abstract class Usuario {
         $this->codigoTarjeta = $codigoTarjeta;
     }
     
-    function getAccesoCajon() {
-        return $this->accesoCajon;
-    }
-
-    function getVehiculo() {
-        return $this->vehiculo;
-    }
-
     function setAccesoCajon(AccesoCajon $accesoCajon) {
         array_push($this->accesoCajon = $accesoCajon);
     }
